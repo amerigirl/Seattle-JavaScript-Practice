@@ -9,3 +9,13 @@ const checkNumbers = (firstNumber, secondNumber) => {
 
   console.log(checkNumbers(50, 50));
 };
+
+
+//2.  Write a program to get the extension of a filename.
+
+const getFileExtension = (anyString) => {
+  extensionOnly = anyString.slice(anyString.lastIndexOf("."));
+  return extensionOnly;
+}
+
+console.log(getFileExtension("www.google.com"))
