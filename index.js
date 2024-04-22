@@ -32,3 +32,15 @@ anyOldString
 
 
 console.log(replaceWithNextChar("abcd"));
+
+//4. Write a Javascript program to get the current date. Expected output: MM/DD/YYYY
+
+const getTheDate = (date = new Date()) => {
+  
+  const months = (date.getMonth() + 1);
+  const days = (date.getDate() - 1);  //why does it take a -1 for this to be right? tried other getdate methods and still it comes to the 22nd when today is the 23rd :(  const year = date.getFullYear();
+
+  return `${months}/${days}/${year}`
+}
+  
+console.log(getTheDate());
