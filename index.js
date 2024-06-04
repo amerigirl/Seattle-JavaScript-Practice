@@ -1,5 +1,6 @@
 //JavaScript Practice in Seattle.  Yes I've done most of these before. Yes I will be doing more!  And yes, doing things repeatedly is a good thing if you are learning :)
 
+//this is a connection check
 // 1. Write a javascript program to check two numbers and return true if one of the numbers is 100 or if the sum of the two numbers is 100.
 
 const checkNumbers = (firstNumber, secondNumber) => {
