@@ -37,7 +37,7 @@ console.log(replaceWithNextChar("abcd"));
 const getTheDate = (date = new Date()) => {
   const months = date.getMonth() + 1;
   const days = date.getDate() - 1; //why does it take a -1 for this to be right? tried other getdate methods and still it comes to the 22nd when today is the 23rd :(  const year = date.getFullYear();
-    const year = date.getFullYear();
+  const year = date.getFullYear();
   return `${months}/${days}/${year}`;
 };
 console.log(getTheDate());
@@ -66,7 +66,6 @@ for (let i = 0; i < matrix.length; i++) {
 //Change the value at the first row, second column to 10.
 
 matrix[0][1] = 10;
-console.log(matrix[0][1]);
 console.log("3. matrix[0][1] = " + matrix[0][1]);
 
 //Create a function to transpose the matrix (swap rows with columns). Did not do on your own!
@@ -78,10 +77,32 @@ function transposeMatrix(matrix) {
     transposed[i] = [];
     for (let j = 0; j < matrix.length; j++) {
       transposed[i][j] = matrix[j][i];
+      
     }
-
-    return transposed;
   }
+  return transposed;
 }
+
 let transposedMatrix = transposeMatrix(matrix);
-console.log(transposedMatrix)
+console.log("4. Transposed matrix = " + transposedMatrix);
+
+// Calculate the sum of all elements in the 2D array.
+
+function sumElements(matrix) {
+  let sum = 0; 
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+       sum += matrix[i][j];
+    }
+  }
+  return sum;
+}
+console.log("5. Sum of the matrix = " + sumElements(matrix))
+
+// Find the minimum and maximum values in the matrix.
+
+// Print the elements on the main diagonal (top-left to bottom-right).
+
+// Print the elements on the anti-diagonal (top-right to bottom-left).
+
+// Convert a 2D array into a 1D array.
